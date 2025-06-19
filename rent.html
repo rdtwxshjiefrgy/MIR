@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Аренда техники | Мир</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="index.html" class="logo">
+                    <span class="logo__text">Мир</span>
+                    <span class="logo__subtext">Грузовые перевозки</span>
+                </a>
+                
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="index.html" class="nav__link active">Главная</a></li>
+                        <li class="nav__item dropdown">
+                            <a href="construction.html" class="nav__link">Строительно-монтажные работы</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="construction.html#blago">Благоустройство</a></li>
+                                <li><a href="construction.html#earth">Земляные работы</a></li>
+                                <li><a href="construction.html#road">Дорожные работы</a></li>
+                                <li><a href="construction.html#montage">Монтажные работы</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav__item"><a href="transport.html" class="nav__link">Перевозки грузов</a></li>
+                        <li class="nav__item"><a href="rent.html" class="nav__link">Аренда техники</a></li>
+                        <li class="nav__item"><a href="projects.html" class="nav__link">Объекты</a></li>
+                        <li class="nav__item"><a href="about.html" class="nav__link">О нас</a></li>
+                        <li class="nav__item"><a href="contacts.html" class="nav__link">Контакты</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="header__contacts">
+                    <a href="tel:+78001234567" class="phone">+7 (905) 256-17-19</a>
+                    <button class="btn callback-btn">Заказать звонок</button>
+                </div>
+                
+                <button class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header" style="background-image: url('https://images.unsplash.com/photo-1608889825103-eb5a6f5bc9e3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+            <div class="container">
+                <h1 class="page-header__title">Аренда техники</h1>
+                <nav class="breadcrumbs">
+                    <a href="index.html" class="breadcrumbs__link">Главная</a>
+                    <span class="breadcrumbs__separator">/</span>
+                    <span class="breadcrumbs__current">Аренда техники</span>
+                </nav>
+            </div>
+        </section>
+
+        <section class="rent-section">
+            <div class="container">
+                <div class="rent-intro">
+                    <h2 class="section-title">Арендуйте спецтехнику для любых задач</h2>
+                    <p>Компания "Мир" предлагает в аренду широкий парк современной спецтехники для строительных, дорожных, земляных и других видов работ. Все машины находятся в отличном техническом состоянии и укомплектованы профессиональными операторами.</p>
+                </div>
+
+                <div class="rent-categories">
+                    <h3 class="rent-categories__title">Категории техники</h3>
+                    <div class="rent-categories__grid">
+                        <a href="#earthmoving" class="rent-category active">
+                            <i class="fas fa-truck-pickup"></i>
+                            <span>Землеройная</span>
+                        </a>
+                        <a href="#loading" class="rent-category">
+                            <i class="fas fa-truck-loading"></i>
+                            <span>Погрузочная</span>
+                        </a>
+                        <a href="#road" class="rent-category">
+                            <i class="fas fa-road"></i>
+                            <span>Дорожная</span>
+                        </a>
+                        <a href="#lifting" class="rent-category">
+                            <i class="fas fa-crane"></i>
+                            <span>Подъемная</span>
+                        </a>
+                        <a href="#transport" class="rent-category">
+                            <i class="fas fa-truck"></i>
+                            <span>Транспортная</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="rent-equipment" id="earthmoving">
+                    <h3 class="rent-equipment__title">Землеройная техника</h3>
+                    <div class="equipment-grid">
+                        <div class="equipment-card">
+                            <div class="equipment-card__image" style="background-image: url('https://images.unsplash.com/photo-1601579532570-12b04c810f6a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+                            <div class="equipment-card__content">
+                                <h4 class="equipment-card__title">Экскаватор-погрузчик JCB 4CX</h4>
+                                <ul class="equipment-specs">
+                                    <li><strong>Грузоподъемность:</strong> 4 т</li>
+                                    <li><strong>Глубина копания:</strong> 5.5 м</li>
+                                    <li><strong>Объем ковша:</strong> 1.2 м³</li>
+                                    <li><strong>Мощность:</strong> 110 л.с.</li>
+                                </ul>
+                                <div class="equipment-price">
+                                    <span class="price">от 1 500 ₽/час</span>
+                                    <span class="price-note">Минимальный заказ 4 часа</span>
+                                </div>
+                                <button class="btn btn--block open-form">Арендовать</button>
+                            </div>
+                        </div>
+
+                        <div class="equipment-card">
+                            <div class="equipment-card__image" style="background-image: url('https://images.unsplash.com/photo-1601579532220-0d2b1a9f6a0f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+                            <div class="equipment-card__content">
+                                <h4 class="equipment-card__title">Гусеничный экскаватор Hitachi ZX 210</h4>
+                                <ul class="equipment-specs">
+                                    <li><strong>Грузоподъемность:</strong> 6.5 т</li>
+                                    <li><strong>Глубина копания:</strong> 6.8 м</li>
+                                    <li><strong>Объем ковша:</strong> 1.3 м³</li>
+                                    <li><strong>Мощность:</strong> 160 л.с.</li>
+                                </ul>
+                                <div class="equipment-price">
+                                    <span class="price">от 2 200 ₽/час</span>
+                                    <span class="price-note">Минимальный заказ 4 часа</span>
+                                </div>
+                                <button class="btn btn--block open-form">Арендовать</button>
+                            </div>
+                        </div>
+
+                        <div class="equipment-card">
+                            <div class="equipment-card__image" style="background-image: url('https://images.unsplash.com/photo-1601579532220-0d2b1a9f6a0f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+                            <div class="equipment-card__content">
+                                <h4 class="equipment-card__title">Бульдозер CAT D6T</h4>
+                                <ul class="equipment-specs">
+                                    <li><strong>Масса:</strong> 22 т</li>
+                                    <li><strong>Мощность:</strong> 215 л.с.</li>
+                                    <li><strong>Ширина отвала:</strong> 3.5 м</li>
+                                    <li><strong>Высота отвала:</strong> 1.3 м</li>
+                                </ul>
+                                <div class="equipment-price">
+                                    <span class="price">от 3 500 ₽/час</span>
+                                    <span class="price-note">Минимальный заказ 8 часов</span>
+                                </div>
+                                <button class="btn btn--block open-form">Арендовать</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rent-equipment" id="loading">
+                    <h3 class="rent-equipment__title">Погрузочная техника</h3>
+                    <div class="equipment-grid">
+                        <!-- Аналогичные карточки для погрузочной техники -->
+                    </div>
+                </div>
+
+                <div class="rent-benefits">
+                    <h2 class="section-title">Почему выгодно арендовать у нас</h2>
+                    <div class="benefits-grid">
+                        <div class="benefit-card">
+                            <div class="benefit-card__icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <h3 class="benefit-card__title">Исправная техника</h3>
+                            <p class="benefit-card__text">Весь парк регулярно проходит ТО и обслуживание</p>
+                        </div>
+                        <div class="benefit-card">
+                            <div class="benefit-card__icon">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <h3 class="benefit-card__title">Опытные операторы</h3>
+                            <p class="benefit-card__text">Работают только квалифицированные машинисты</p>
+                        </div>
+                        <div class="benefit-card">
+                            <div class="benefit-card__icon">
+                                <i class="fas fa-ruble-sign"></i>
+                            </div>
+                            <h3 class="benefit-card__title">Гибкие цены</h3>
+                            <p class="benefit-card__text">Скидки при долгосрочной аренде</p>
+                        </div>
+                        <div class="benefit-card">
+                            <div class="benefit-card__icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <h3 class="benefit-card__title">Круглосуточная работа</h3>
+                            <p class="benefit-card__text">Возможность аренды в любое время</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rent-request">
+                    <div class="rent-request__content">
+                        <h2 class="rent-request__title">Не нашли нужную технику?</h2>
+                        <p class="rent-request__text">Оставьте заявку с описанием требуемой техники и мы подберем для вас оптимальный вариант</p>
+                        <button class="btn btn--large open-form">Оставить заявку</button>
+                    </div>
+                    <div class="rent-request__image" style="background-image: url('https://images.unsplash.com/photo-1601579532220-0d2b1a9f6a0f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__col">
+                    <a href="index.html" class="logo footer__logo">
+                        <span class="logo__text">Мир</span>
+                        <span class="logo__subtext">Грузовые перевозки</span>
+                    </a>
+                    <p class="footer__text">Надежные грузоперевозки и строительные услуги по всей России с 2010 года</p>
+                    <div class="footer__social">
+                        <a href="#" class="social-link"><i class="fab fa-vk"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer__col">
+                    <h3 class="footer__title">Услуги</h3>
+                    <ul class="footer__list">
+                        <li><a href="transport.html">Грузоперевозки</a></li>
+                        <li><a href="construction.html">Строительные работы</a></li>
+                        <li><a href="rent.html">Аренда техники</a></li>
+                        <li><a href="projects.html">Наши объекты</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h3 class="footer__title">Компания</h3>
+                    <ul class="footer__list">
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="about.html#park">Наш автопарк</a></li>
+                        <li><a href="about.html#licenses">Лицензии</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h3 class="footer__title">Контакты</h3>
+                    <ul class="footer__contacts">
+                        <li><i class="fas fa-map-marker-alt"></i> Адрес</li>
+                        <li><i class="fas fa-phone"></i> <a href="tel:+78001234567">+7 (905) 256-17-19</a></li>
+                        <li><i class="fas fa-envelope"></i> <a href="mail:pochtaspb_mir@bk.ru">pochtaspb_mir@bk.ru</a></li>
+                        <li><i class="fas fa-clock"></i> Пн-Пт: 9:00 - 18:00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">© 2025 ООО "Мир". Все права защищены.</p>
+                <a href="#" class="footer__link">Политика конфиденциальности</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/rent.js"></script>
+</body>
+</html>
